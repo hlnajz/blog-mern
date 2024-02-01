@@ -1,0 +1,80 @@
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 1000;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topCenter {
+  flex: 6;
+}
+.topImg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: border-color 0.2s;
+}
+
+.topImg:hover {
+  border: 2px solid #444;
+}
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.topListItem:hover {
+  box-shadow: 8px 8px 10px #655757;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.topIcon:hover {
+  color: #655757;
+  font-size: 26px;
+  transition: all 0.2s;
+  transition-delay: 0s;
+}
+.topIcon:not(:hover) {
+  transition-delay: 1.5s;
+}
+.topSearchIcon:hover {
+  color: #655757;
+  font-size: 20px;
+  transition: all 0.2s;
+}
